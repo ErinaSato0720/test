@@ -1,0 +1,9 @@
+
+public class renshuu {
+
+	public static void main(String[] args) {
+		Systen.out.println(0);
+
+	}
+
+}

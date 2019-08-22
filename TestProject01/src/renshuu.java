@@ -2,9 +2,13 @@
 public class renshuu {
 
 	public static void main(String[] args) {
-		System.out.println("例外が");
-		System.out.println("発生しました");
-
+	
+	String[] name = new String[3];
+	
+	name[0]="田中";
+	name[1]="高橋";
+	name[2]="斉藤";
+	
+	System.out.println(name[0]);
 	}
-
 }

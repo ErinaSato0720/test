@@ -1,0 +1,9 @@
+
+public class renshuu {
+
+	public static void main(String[] args) {
+	
+		float a=(float)6/7;
+		System.out.println(a);
+	}
+}

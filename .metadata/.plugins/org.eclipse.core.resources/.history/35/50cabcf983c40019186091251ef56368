@@ -1,9 +1,0 @@
-
-public class renshuu {
-
-	public static void main(String[] args) {
-	char a='AB';
-	System.out.println(a);
-	}
-
-}

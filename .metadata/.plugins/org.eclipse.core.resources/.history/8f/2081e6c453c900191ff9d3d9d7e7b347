@@ -1,0 +1,12 @@
+
+public interface Mp3Player {
+
+	public adstract void play();
+
+	public adstract void stop();
+
+	public adstract void next();
+
+	public adstract void back();
+
+}

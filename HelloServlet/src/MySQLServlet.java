@@ -24,7 +24,7 @@ public class MySQLServlet extends HttpServlet{
 	protected void doGet(HttpServletRequest request, HttpServletResponse response) throws
 	ServletException, IOException{
 		request.setCharacterEncoding("UTF-8");
-		response.setContentType("text/html; charset=UTD-8");
+		response.setContentType("text/html; charset=UTF-8");
 
 		PrintWriter out = response.getWriter();
 
@@ -48,11 +48,11 @@ public class MySQLServlet extends HttpServlet{
 			ResultSet rs = stmt.executeQuery(sql);
 
 			while(rs.next()){
-				int userID = rs.getInt("user_id");
+				int userId = rs.getInt("user_id");
 				String userName = rs.getString("user_name");
 				String userPassword = rs.getString("password");
 				out.println("<p>");
-				out.println("ユーザーID:"+userID + ",ユーザー名:"+userName+",パスワード:"+userPassword);
+				out.println("ユーザーID:"+userId + ",ユーザー名:"+userName+",パスワード:"+userPassword);
 				out.println("</p>");
 			}
 
@@ -61,9 +61,9 @@ public class MySQLServlet extends HttpServlet{
 		}catch(ClassNotFoundException e){
 			out.println("ClassNotFoundException:"+ e.getMessage());
 		}catch(SQLException e){
-			out.println("SQLException"+ e.getMessage());
+			out.println("SQLException:"+ e.getMessage());
 		}catch(Exception e){
-			out.println("Exception"+ e.getMessage());
+			out.println("Exception:"+ e.getMessage());
 		}finally{
 			try{
 				if(conn !=null){

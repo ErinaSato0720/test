@@ -17,7 +17,7 @@ public class UserListDeleteCompleteAction extends ActionSupport {
 
 		if(res > 0){
 			 setMessage("削除が完了しました。");
-		 }else if(res == 0){
+		 }else{
 			 setMessage("削除できませんでした。");
 		 }
 		 result = SUCCESS;

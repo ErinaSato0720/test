@@ -39,6 +39,10 @@
 				<td><s:property value = "itemStock" /></td>
 				<td><s:property value = "insert_date" /></td>
 				<td><s:property value = "update_date" /></td>
+				<td><a href = '<s:url action = "ItemDetailsAction">
+						<s:param name = "id" value = "%{id}"/>
+						</s:url>'>詳細</a>
+				</td>
 			</tr>
 			</s:iterator>
 			</table>

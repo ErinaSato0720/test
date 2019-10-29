@@ -6,7 +6,7 @@ public class UserInfoDTO {
 	private String loginId;
 	private String loginPassword;
 	private String userName;
-	private String insert_name;
+	private String insert_date;
 	private String update_date;
 
 	public String getId(){
@@ -24,7 +24,7 @@ public class UserInfoDTO {
 	public String getLoginPassword(){
 		return loginPassword;
 	}
-	public void setLoginPassworf(String loginPassword){
+	public void setLoginPassword(String loginPassword){
 		this.loginPassword = loginPassword;
 	}
 	public String getUserName(){
@@ -33,11 +33,11 @@ public class UserInfoDTO {
 	public void setUserName(String userName){
 		this.userName = userName;
 	}
-	public String getInsert_name(){
-		return insert_name;
+	public String getInsert_date(){
+		return insert_date;
 	}
-	public void setInsert_name(String insert_name){
-		this.insert_name = insert_name;
+	public void setInsert_date(String insert_date){
+		this.insert_date = insert_date;
 	}
 	public String getUpdate_date(){
 		return update_date;

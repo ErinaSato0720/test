@@ -26,9 +26,9 @@ public class UserListDAO {
 			UserInfoDTO dto = new UserInfoDTO();
 			dto.setId(rs.getString("id"));
 			dto.setLoginId(rs.getString("login_id"));
-			dto.setLoginPassworf(rs.getString("login_pass"));
+			dto.setLoginPassword(rs.getString("login_pass"));
 			dto.setUserName(rs.getString("user_name"));
-			dto.setInsert_name(rs.getString("insert_date"));
+			dto.setInsert_date(rs.getString("insert_date"));
 			dto.setUpdate_date(rs.getString("update_date"));
 			userInfoDTOList.add(dto);
 		}

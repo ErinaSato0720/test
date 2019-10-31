@@ -32,18 +32,18 @@
 				<th>更新日</th>
 			</tr>
 			<s:iterator value = "itemInfoDTOList">
-			<tr>
-				<td><s:property value = "id" /></td>
-				<td><s:property value = "itemName" /></td>
-				<td><s:property value = "itemPrice" /></td>
-				<td><s:property value = "itemStock" /></td>
-				<td><s:property value = "insert_date" /></td>
-				<td><s:property value = "update_date" /></td>
-				<td><a href = '<s:url action = "ItemDetailsAction">
-						<s:param name = "id" value = "%{id}"/>
-						</s:url>'>詳細</a>
-				</td>
-			</tr>
+				<tr>
+					<td><s:property value = "id" /></td>
+					<td><s:property value = "itemName" /></td>
+					<td><s:property value = "itemPrice" /></td>
+					<td><s:property value = "itemStock" /></td>
+					<td><s:property value = "insert_date" /></td>
+					<td><s:property value = "update_date" /></td>
+					<td><a href = '<s:url action = "ItemDetailsAction">
+							<s:param name = "id" value = "%{id}"/>
+							</s:url>'>詳細</a>
+					</td>
+				</tr>
 			</s:iterator>
 			</table>
 			</s:elseif>
